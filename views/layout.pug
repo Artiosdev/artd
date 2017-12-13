@@ -1,0 +1,79 @@
+doctype html
+html
+  head
+    title ArtiosDev
+    
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='author', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+   
+    meta(name='description', content='')
+    meta(name='robots', content='all,follow')
+    // Favicon
+    link(rel='shortcut icon', href='favicon.png')
+    // Tweaks for older IEs
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.default.css')
+    link(rel='stylesheet', href='https://d19m59y37dris4.cloudfront.net/landy/1-0/vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='https://d19m59y37dris4.cloudfront.net/landy/1-0/css/landy-iconfont.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:300', rel='stylesheet')
+    link(rel='stylesheet', href='https://d19m59y37dris4.cloudfront.net/landy/1-0/vendor/owl.carousel/assets/owl.carousel.css')
+    link(rel='stylesheet', href='https://d19m59y37dris4.cloudfront.net/landy/1-0/vendor/owl.carousel/assets/owl.theme.default.css')
+    
+  body
+    // navbar
+    header.header
+      nav.navbar.navbar-expand-lg.fixed-top
+        a.navbar-brand(href='/') ArtiosDev
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span
+          span
+          span
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto.align-items-start.align-items-lg-center
+            li.nav-item
+              a.nav-link.link-scroll(href='/') Home
+            li.nav-item
+              a.nav-link.link-scroll(href='/services') Services
+            li.nav-item
+              a.nav-link.link-scroll(href='/work') Work
+            li.nav-item
+              a.nav-link.link-scroll(href='/about') About Us
+            li.nav-item
+              a.nav-link.link-scroll(href='/contact') Contact Us
+
+      block content        
+    footer.main-footer
+      .container
+        .row
+          .col-xs-12.ml-3
+            | ArtiosDev
+            ul.contact-info.list-unstyled
+              li
+                a(href='hello@artiosdev.com') hello@artiosdev.com
+              li
+                a(href='tel:123456789') 01865 000 000
+            ul.social-icons.list-inline
+              li.list-inline-item
+                a(href='#', target='_blank', title='Facebook')
+                  i.fa.fa-facebook
+              li.list-inline-item
+                a(href='#', target='_blank', title='Twitter')
+                  i.fa.fa-twitter
+      .copyrights
+        .container
+          .row
+            .col-md-6
+              p © 2017 ArtiosDev.com. All rights reserved.                        
+            .col-md-6.text-right
+              p
+                a(href='/privacy-policy') Privacy
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js')
+  

@@ -1,0 +1,73 @@
+extends layout
+
+block content
+  section#hero.hero.hero-home.bg-features
+    .container
+      .row.d-flex.text-white
+        .col-lg-6.text.order-2.order-lg-1.text-white
+          h1 Helping you
+          h2 bring your ideas to life
+          .CTA
+            a.bttn-material-flat.bttn-md.bttn-primary.link-scroll(href='/contact') Request A Quote
+        .col-lg-6.order-1.order-lg-2
+          img.img-fluid(src='/images/idea.png', alt='...')
+  section#extra-features.extra-features
+    .container.text-center
+      header
+        h2 Services
+        .row
+          p.lead.col-lg-8.mx-auto We are exceptional in what we do.
+      .grid.row
+        .item.col-lg-4.col-md-6
+          .icon
+            i.fa.fa-desktop
+          h3.h5 Custom Web Development
+          p
+            | Our developers craft beautiful and interactive web experiences using the latest technologies, ensuring they display elegantly on mobile, desktop and tablets.
+        .item.col-lg-4.col-md-6
+          .icon
+            i.fa.fa-mobile
+          h3.h5 Mobile App Development
+          p
+            | Our UI designers have vast experience in both Android and iOS. They create applications with the appropriate UI
+            | design to appeal to your customers and create a pleasant novel experience across all mobile platforms.
+        .item.col-lg-4.col-md-6
+          .icon
+            i.fa.fa-area-chart(aria-hidden='true')
+          h3.h5 Data & Visual Analytics
+          p
+            | Unlock your data's full potential. We create bespoke and interactive visualisation of your big data
+        .item.col-lg-4.col-md-6
+          .icon
+            i.fa.fa-search-plus
+          h3.h5 SEO
+          p
+            | Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+        .item.col-lg-4.col-md-6
+          .icon
+            i.fa.fa-superpowers
+          h3.h5 Branding
+          p
+            | Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+        .item.col-lg-4.col-md-6
+          .icon
+            i.fa.fa-gift(aria-hidden='true')
+          h3.h5 Charities
+          p
+            | Pro-bono services potentially available for charities, social enterprises and churches.
+  section
+    .container
+      .row.d-flex.justify-content-center
+        .col-lg-8.text-center
+          h2.h3.mb-5 Some of our work
+          
+  section.bg-features.mt-4
+    .container.text-center.mt-3
+      h1.pt-4.text-white.pt-1 Let's get to work
+      h2.text-white.pt-1 Have a challenging problem or enterprising idea?
+      p.pt-1 
+        |We'd love to hear from you
+      a.button.bttn-material-flat.bttn-lg.bttn-primary(href='/contact') Contact Us
+      p.pb-3
+  
+  

@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  .container.contact.mt-5
+    form(method = "post", action = "contact/send")
+      h2.text-center Contact Us
+      hr.line
+      .form-holder
+        .row
+          .col-md-6
+            .form-group
+              label Name*
+              input.form-control(type="text", name="name", placeholder = "Enter Name")
+          .col-md-6 
+            .form-group
+              label Email*
+              input.form-control(type="email", name="email" placeholder="Enter Email")
+          .col-md-6
+            .form-group
+              label Phone*
+              textarea.form-control(name="phone", placeholder="Enter Message")
+          .col-md-6
+            .form-group
+              label Message*
+              textarea.form-control(name="message", placeholder="Enter Phone number")
+          .col-md-6
+            .form-group
+              label Budget
+              textarea.form-control(name="message", placeholder="Do you have a budget in mind?")
+          .col-md-6
+            .form-group
+              label How did you hear about us?
+              textarea.form-control(name="message", placeholder="How did you hear about us?")
+            button.bttn-material-flat.bttn-lg.bttn-primary.submit(type="submit") Submit 
