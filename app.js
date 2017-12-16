@@ -10,6 +10,7 @@ var about = require('./routes/about');
 var services = require('./routes/services');
 var privacypolicy = require('./routes/privacy-policy');
 var contact = require('./routes/contact');
+var contact = require('./routes/process');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/about', about);
 app.use('/services', services);
 app.use('/privacy-policy', privacypolicy);
 app.use('/contact', contact);
+app.use('/process', process);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -375,6 +375,12 @@ section.bg-features .container .bttn-primary:hover {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 991px) {
+  section#features.features .container h1, h4{
+    margin-top:.5em;
+  }
+  
+}
 
 /*
 * ==========================================================
@@ -491,7 +497,7 @@ footer.main-footer ul.links a:hover {
 
 footer.main-footer ul.social-icons {
   margin-top: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 footer.main-footer ul.social-icons a {
@@ -529,11 +535,9 @@ footer.main-footer .copyrights a:hover {
 /* Footer Mediaquery -------------------------- */
 @media (max-width: 991px) {
   footer.main-footer {
-    padding: 100px 0 0;
+    padding-top: 20px;
   }
-  footer.main-footer .copyrights {
-    margin-top: 100px;
-  }
+  
   footer.main-footer .copyrights div[class*="col-"] {
     text-align: center !important;
   }
