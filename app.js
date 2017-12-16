@@ -10,7 +10,7 @@ var about = require('./routes/about');
 var services = require('./routes/services');
 var privacypolicy = require('./routes/privacy-policy');
 var contact = require('./routes/contact');
-var contact = require('./routes/process');
+var process = require('./routes/process');
 
 var app = express();
 
