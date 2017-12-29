@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id ="muse" enable-background="new 0 0 356.923 356.923" version="1.1" viewBox="0 0 356.923 356.923" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<circle cx="178.46" cy="178.46" r="178.46" fill="none" stroke="red" stroke-width="10"/>
+<path d="m27.436 273.5c31.601 50.11 87.404 83.426 151.02 83.426s119.42-33.317 151.02-83.426h-302.05z" fill="#FFC640" stroke-width="10"/>
+<polygon points="216.23 267.85 140.66 267.85 150.25 221.14 206.62 221.14" fill="none" stroke="#F2F2F2"/>
+<polygon points="216.23 267.85 206.62 221.14 150.25 221.14 196.96 267.85" fill="none" stroke="#D9D8D7"/>
+<rect x="120.44" y="267.84" width="116.01" height="5.652" fill="none" stroke="#F2F2F2"/>
+<path d="m40.505 28.923c-3.867 0-7.038 3.188-7.038 7.057v178.1c0 3.882 3.17 7.052 7.038 7.052h275.89c3.879 0 7.065-3.17 7.065-7.052v-178.1c0-3.87-3.185-7.057-7.065-7.057h-275.89z" fill="#242D3C"/>
+<rect x="48.123" y="43.569" width="260.68" height="162.9" fill="none" stroke="#fff"/>
+<g fill="none" stroke="#D9D8D7">
+	<rect x="130.9" y="171.64" width="162.86" height="3.239"/>
+	<rect x="63.138" y="171.64" width="55.06" height="3.239"/>
+	<rect x="63.138" y="181.69" width="230.62" height="3.239"/>
+	<rect x="63.138" y="191.7" width="115.31" height="3.239"/>
+</g>
+<rect x="67.766" y="55.126" width="33.716" height="104" fill="none" stroke="#FF6D3B"/>
+<rect x="113.53" y="110.79" width="33.716" height="48.342" fill="none" stroke="#D9D8D7"/>
+<rect x="159.31" y="71.911" width="33.716" height="87.22" fill="none" stroke="#3E4959"/>
+<rect x="205.1" y="139.94" width="33.716" height="19.18" fill="none" stroke="#21D8DE"/>
+<g fill="none" stroke="#D9D8D7">
+	<rect x="262.67" y="57.831" width="16.768" height="3.567"/>
+	<rect x="282.09" y="57.831" width="7.038" height="3.567"/>
+	<rect x="262.67" y="86.449" width="26.466" height="3.567"/>
+	<rect x="284.95" y="100.75" width="4.18" height="3.569"/>
+	<rect x="262.67" y="100.75" width="20.052" height="3.569"/>
+	<rect x="262.67" y="72.14" width="4.898" height="3.567"/>
+	<rect x="270.97" y="72.14" width="7.458" height="3.567"/>
+	<rect x="281.67" y="72.14" width="7.458" height="3.567"/>
+</g>
+<circle cx="253.24" cy="59.616" r="4.492" fill="none" stroke="#3E4959"/>
+<circle cx="253.24" cy="73.92" r="4.492" fill="none" stroke="#D9D8D7"/>
+<circle cx="253.24" cy="88.222" r="4.492" fill="none" stroke="#FF6D3B"/>
+<circle cx="253.24" cy="102.52" r="4.492" fill="none" stroke="#21D8DE"/>
+</svg>

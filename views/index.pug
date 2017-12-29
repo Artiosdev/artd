@@ -5,11 +5,11 @@ block content
     .container
       .row.d-flex.text-white
         .col-lg-6.text.order-2.order-lg-1
-          h1.text-white Helping you
-          h2.text-white bring your ideas to life
+          h1.text-white.help Helping you
+          h2.text-white.idea bring your ideas to life
           .CTA
             a.bttn-material-flat.bttn-md.bttn-primary.link-scroll(href='/contact') Request A Quote
-        .col-lg-6.order-1.order-lg-2
+        .col-lg-6.order-1.order-lg-2.h-img
           img.img-fluid(src='/images/idea.png', alt='ideas')
   section#extra-features.extra-features
     .container.text-center
@@ -36,7 +36,7 @@ block content
             i.fa.fa-area-chart(aria-hidden='true')
           h3.h5 Data & Visual Analytics
           p
-            | Unlock your data's full potential. We create bespoke and interactive visualisation of your big data
+            | Unlock your data's full potential. We tranform your data into interactive, interesting and informative visualisations.
         .item.col-lg-4.col-md-6
           .icon
             i.fa.fa-shopping-cart
@@ -69,5 +69,32 @@ block content
         |We'd love to hear from you
       a.button.bttn-material-flat.bttn-lg.bttn-primary(href='/contact') Contact Us
       p.pb-3
-  
+  script.
+    window.sr = ScrollReveal();
+    sr.reveal('.h-img', {
+      duration: 2000,
+      origin:'right',
+      distance:'300px',
+      delay:2000,
+      scale:.4
+    });  
+    sr.reveal('.help', {
+      duration: 2000,
+      origin:'top',
+      distance:'200px'
+    });  
+    sr.reveal('.idea', {
+      duration: 2000,
+      origin:'left',
+      distance:'100px',
+      delay:2000
+    });  
+    sr.reveal('.CTA', {
+      duration: 1000,
+      origin:'bottom',
+      delay:4000
+    }); 
+
+
+
   

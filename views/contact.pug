@@ -1,34 +1,107 @@
 extends layout
-
+  
 block content
-  .container.contact.mt-5
-    form(method = "post", action = "contact/send")
-      h2.text-center Contact Us
-      hr.line
-      .form-holder
-        .row
-          .col-md-6
-            .form-group
-              label Name*
-              input.form-control(type="text", name="name", placeholder = "Enter Name")
-          .col-md-6 
-            .form-group
-              label Email*
-              input.form-control(type="email", name="email" placeholder="Enter Email")
-          .col-md-6
-            .form-group
-              label Phone
-              textarea.form-control(name="phone", placeholder="Enter Phone number")
-          .col-md-6
-            .form-group
-              label Message*
-              textarea.form-control(name="message", placeholder="Enter Message")
-          .col-md-6
-            .form-group
-              label Budget
-              textarea.form-control(name="message", placeholder="Do you have a budget in mind?")
-          .col-md-6
-            .form-group
-              label How did you hear about us?
-              textarea.form-control(name="message", placeholder="How did you hear about us?")
-            button.bttn-material-flat.bttn-lg.bttn-primary.submit(type="submit") Submit 
+  .container.mt-5.text-center
+    h2 Contact Us
+   
+    .row.contact.mt-5
+      .col-md-4
+        h6.strong Work with Us
+        p
+          strong
+            a(href='mailto:start@artiosdev.com') start@artiosdev.com
+      .col-md-4
+        h6.strong General
+        p
+          strong
+            a(href='mailto:hello@artiosdev.com') hello@artiosdev.com
+      .col-md-4
+        h6.strong Careers
+        p
+          strong
+            a(href='mailto:careers@artiosdev.com') careers@artiosdev.com
+    p
+      | Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within matter of hours to help you.
+  .container.bg-lg4.mt-3
+    h4.text-center.mb-3.mt-5.pt-5 New business.
+    .row
+      .col-md-12
+        form#contact-form(name='contact-form', action='send', method='POST')
+          .row
+            .col-md-6
+              .md-form
+                .md-form
+                  input#name.form-control(type='text', name='name')
+                  label(for='name') Your name *
+            .col-md-6
+              .md-form
+                .md-form
+                  input#email.form-control(type='email', name='email')
+                  label(for='email') Your email *
+          .row
+            .col-md-6
+              .md-form
+                .md-form
+                  input#name.form-control(type='text', name='company')
+                  label(for='company') Company *
+            .col-md-6
+              .md-form
+                .md-form
+                  input#email.form-control(type='text', name='phone')
+                  label(for='phone') Phone
+          .row
+            .col-md-12
+              .md-form
+                textarea#message.md-textarea(type='text', name='message')
+                label(for='message') How can we help? *
+          .row
+            .col-md-6
+              .md-form
+                .md-form
+                  input#name.form-control(type='text', name='budget')
+                  label(for='budget') Do you have a budget in mind?
+            .col-md-6
+              .md-form
+                .md-form
+                  input#start.form-control(type='text', name='start')
+                  label(for='start') When are you hoping to start?
+          .row
+            .col-md-12
+              .md-form
+                textarea#message.md-textarea(type='text', name='hearaboutus')
+                label(for='hearaboutus') How did you hear about us?
+        .center-on-small-only.text-center.pb-5
+          button.bttn-material-flat.bttn-lg.bttn-primary.submit(type="submit") Send 
+        #status.status
+  //   block content
+    .container.contact.mt-5
+      form(method = "post", action = "contact/send")
+        h2.text-center Contact Us
+        hr.line
+        .form-holder
+          .row
+            .col-md-6
+              .form-group
+                label Name*
+                input.form-control(type="text", name="name", placeholder = "Enter Name")
+            .col-md-6 
+              .form-group
+                label Email*
+                input.form-control(type="email", name="email" placeholder="Enter Email")
+            .col-md-6
+              .form-group
+                label Phone
+                textarea.form-control(name="phone", placeholder="Enter Phone number")
+            .col-md-6
+              .form-group
+                label Message*
+                textarea.form-control(name="message", placeholder="Enter Message")
+            .col-md-6
+              .form-group
+                label Budget
+                textarea.form-control(name="message", placeholder="Do you have a budget in mind?")
+            .col-md-6
+              .form-group
+                label How did you hear about us?
+                textarea.form-control(name="message", placeholder="How did you hear about us?")
+              button.bttn-material-flat.bttn-lg.bttn-primary.submit(type="submit") Submit 
