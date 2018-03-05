@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 });
 
 //send Email
-
+/*
 router.post('/send', function(req, res, next){
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
@@ -36,5 +36,5 @@ router.post('/send', function(req, res, next){
         res.redirect('/');
     });
 });
-
-module.exports = router;
+*/
+module.exports = router; 
