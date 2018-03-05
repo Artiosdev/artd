@@ -12,7 +12,6 @@ var about = require('./routes/about');
 var services = require('./routes/services');
 var privacypolicy = require('./routes/privacy-policy');
 var contact = require('./routes/contact');
-var process = require('./routes/process');
 var thanks = require('./routes/thanks');
 
 var app = express();
@@ -34,7 +33,6 @@ app.use('/about', about);
 app.use('/services', services);
 app.use('/privacy-policy', privacypolicy);
 app.use('/contact', contact);
-app.use('/process', process);
 app.use('/thanks',thanks);
 
 app.post('/send', (req, res) => {
@@ -67,9 +65,9 @@ let transporter = nodemailer.createTransport({
 
 // setup email data with unicode symbols
 let mailOptions = {
-  from: '"Nodemailer Contact" <hello@artiosdev.com>', // sender address
+  from: '"Business Contact" <hello@artiosdev.com>', // sender address
   to: 'hello@artiosdev.com', // list of receivers
-  subject: 'Node Contact Request', // Subject line
+  subject: 'New Business', // Subject line
   text: 'Hello world?', // plain text body
   html: output // html body
 };
@@ -85,46 +83,6 @@ transporter.sendMail(mailOptions, (error, info) => {
   res.render('thanks', {msg:'Email has been sent'});
 });
 });
-/*app.post('/contact', function (req, res){
-  var mailOpts, smtpTrans;
-
-  smtpTrans = nodemailer.createTransport({
-    service: 'Gmail',
-    auth:{
-      user:'skiddygiddy@gmail.com',
-      pass: 123
-    }
-  });
-
-  mailOpts ={
-    from:req.body.name + '&lt;' + req.body.email + '&gt;',
-    to: 'skiddygiddy@yahoo.co.uk',
-    subject: 'work',
-    text: req.body.message + ' || NAAM:'+req.body.name + ' || EMAIL: '+req.body.email
-  };
-
-  smtpTrans.sendMail(mailOpts, function (error, info){
-
-    if(error){
-      res.render('contact',{
-        title: 'Contact',
-        page: 'contact',
-        type:'error',
-        description: 'email'
-      });
-    }
-    else{
-      res.render('contact',{
-        title: 'Contact',
-        page: 'contact',
-        type:'error',
-        description: 'email'});
-    }
-  });
-
-});
-*/
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
