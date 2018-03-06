@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var nodemailer = require ('nodemailer');
+var expressValidator = require('express-validator');
+var expressSession = require('express-session');
 
 
 var index = require('./routes/index');
@@ -13,6 +15,7 @@ var services = require('./routes/services');
 var privacypolicy = require('./routes/privacy-policy');
 var contact = require('./routes/contact');
 var thanks = require('./routes/thanks');
+var logos = require('./routes/logos');
 
 var app = express();
 
@@ -25,8 +28,10 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(expressValidator());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(expressSession({secret: 'max', saveUninitialized: false, resave: false}));
 
 app.use('/', index);
 app.use('/about', about);
@@ -34,8 +39,11 @@ app.use('/services', services);
 app.use('/privacy-policy', privacypolicy);
 app.use('/contact', contact);
 app.use('/thanks',thanks);
+app.use('/logos', logos);
+
 
 app.post('/send', (req, res) => {
+  req.checkBody("leader_email", "Enter a valid email address.").isEmail();
   const output = `
   <p>You have a new contact request</p>
   <h3>Contact Details</h3>
